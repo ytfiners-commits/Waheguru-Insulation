@@ -1,12 +1,12 @@
-
+```html
 <!DOCTYPE html>
 <html lang="en-AU">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#081526">
-  <meta name="description" content="Waheguru Insulation offers Wraping and insulation services. Contact our team to discuss your property and request a quote.">
-  <title>Waheguru Insulation | Wraping & Insulation</title>
+  <meta name="description" content="Waheguru Insulation offers Wrapping and insulation services. Contact our team to discuss your property and request a quote.">
+  <title>Waheguru Insulation | Wrapping & Insulation</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,7 +27,9 @@
       --shadow: 0 18px 55px rgba(12, 34, 60, .09);
     }
 
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
 
     html {
       scroll-behavior: smooth;
@@ -47,11 +49,18 @@
       font-family: "Manrope", Arial, sans-serif;
     }
 
-    a { color: inherit; text-decoration: none; }
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
 
-    button, input, select, textarea { font: inherit; }
+    button, input, select, textarea {
+      font: inherit;
+    }
 
-    img { max-width: 100%; }
+    img {
+      max-width: 100%;
+    }
 
     .container {
       width: min(1160px, calc(100% - 44px));
@@ -72,13 +81,15 @@
       gap: 12px;
     }
 
-    .topbar a:hover { color: var(--cyan); }
+    .topbar a:hover {
+      color: var(--cyan);
+    }
 
     .nav {
       position: sticky;
       top: 0;
       z-index: 50;
-      background: rgba(255, 255, 255, .96);
+      background: rgba(255,255,255,.96);
       border-bottom: 1px solid var(--border);
       backdrop-filter: blur(16px);
     }
@@ -113,7 +124,10 @@
       box-shadow: 0 7px 18px #2378e833;
     }
 
-    .brand-icon svg { width: 27px; height: 27px; }
+    .brand-icon svg {
+      width: 27px;
+      height: 27px;
+    }
 
     .brand small {
       display: block;
@@ -135,7 +149,9 @@
       color: #43546a;
     }
 
-    .nav-links > a:not(.btn):hover { color: var(--blue); }
+    .nav-links > a:not(.btn):hover {
+      color: var(--blue);
+    }
 
     .btn {
       display: inline-flex;
@@ -162,7 +178,9 @@
       color: white;
     }
 
-    .btn-primary:hover { background: #1267d2; }
+    .btn-primary:hover {
+      background: #1267d2;
+    }
 
     .btn-dark {
       color: white;
@@ -175,6 +193,7 @@
       border-color: #d8e2ee;
     }
 
+    /* HERO */
     .hero {
       position: relative;
       overflow: hidden;
@@ -195,7 +214,9 @@
       border-radius: 50%;
       right: -160px;
       top: -170px;
-      box-shadow: 0 0 0 55px #ffffff06, 0 0 0 110px #ffffff04;
+      box-shadow:
+        0 0 0 55px #ffffff06,
+        0 0 0 110px #ffffff04;
       pointer-events: none;
     }
 
@@ -238,7 +259,9 @@
       font-weight: 800;
     }
 
-    h1 span { color: var(--cyan); }
+    h1 span {
+      color: var(--cyan);
+    }
 
     .hero-copy {
       max-width: 540px;
@@ -261,7 +284,9 @@
       border-color: #ffffff38;
     }
 
-    .hero .btn-outline:hover { background: #ffffff17; }
+    .hero .btn-outline:hover {
+      background: #ffffff17;
+    }
 
     .hero-note {
       display: flex;
@@ -295,8 +320,7 @@
       overflow: hidden;
       border: 1px solid #ffffff24;
       border-radius: 26px;
-      background:
-        linear-gradient(180deg, #132c48, #09182b);
+      background: linear-gradient(180deg, #132c48, #09182b);
       box-shadow: 0 30px 90px #0004;
     }
 
@@ -352,7 +376,10 @@
       color: #8bdbff;
     }
 
-    .floating-icon svg { width: 24px; height: 24px; }
+    .floating-icon svg {
+      width: 24px;
+      height: 24px;
+    }
 
     .floating-card strong {
       display: block;
@@ -365,6 +392,7 @@
       font-size: .79rem;
     }
 
+    /* TRUST */
     .trust-strip {
       border-bottom: 1px solid var(--border);
       background: #fff;
@@ -385,7 +413,9 @@
       border-right: 1px solid var(--border);
     }
 
-    .trust-item:last-child { border-right: 0; }
+    .trust-item:last-child {
+      border-right: 0;
+    }
 
     .trust-item svg {
       width: 25px;
@@ -405,9 +435,14 @@
       font-size: .78rem;
     }
 
-    .section { padding: 91px 0; }
+    /* SECTIONS */
+    .section {
+      padding: 91px 0;
+    }
 
-    .section-soft { background: var(--light); }
+    .section-soft {
+      background: var(--light);
+    }
 
     .section-head {
       max-width: 700px;
@@ -438,6 +473,7 @@
       line-height: 1.9;
     }
 
+    /* SERVICES */
     .services-grid {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -470,7 +506,10 @@
       background: #eaf3ff;
     }
 
-    .service-icon svg { width: 31px; height: 31px; }
+    .service-icon svg {
+      width: 31px;
+      height: 31px;
+    }
 
     .service-card h3 {
       margin: 0 0 12px;
@@ -494,8 +533,11 @@
       font-size: .9rem;
     }
 
-    .service-link:hover { gap: 13px; }
+    .service-link:hover {
+      gap: 13px;
+    }
 
+    /* ABOUT */
     .about-grid {
       display: grid;
       grid-template-columns: .9fr 1.1fr;
@@ -533,10 +575,19 @@
       color: white;
     }
 
-    .about-label strong { display: block; font-size: 1rem; }
-    .about-label span { color: #b5c9de; font-size: .83rem; }
+    .about-label strong {
+      display: block;
+      font-size: 1rem;
+    }
 
-    .about-copy h2 { margin-top: 12px; }
+    .about-label span {
+      color: #b5c9de;
+      font-size: .83rem;
+    }
+
+    .about-copy h2 {
+      margin-top: 12px;
+    }
 
     .about-copy > p {
       color: var(--muted);
@@ -581,6 +632,7 @@
       font-size: .88rem;
     }
 
+    /* PROCESS */
     .process-grid {
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -618,6 +670,7 @@
       font-size: .91rem;
     }
 
+    /* QUOTE */
     .quote-section {
       position: relative;
       overflow: hidden;
@@ -627,9 +680,13 @@
         var(--navy);
     }
 
-    .quote-section h2 { color: white; }
+    .quote-section h2 {
+      color: white;
+    }
 
-    .quote-section .section-head p { color: #bdcde0; }
+    .quote-section .section-head p {
+      color: #bdcde0;
+    }
 
     .quote-wrap {
       display: grid;
@@ -667,7 +724,10 @@
       color: var(--cyan);
     }
 
-    .contact-icon svg { width: 21px; height: 21px; }
+    .contact-icon svg {
+      width: 21px;
+      height: 21px;
+    }
 
     .contact-method small {
       display: block;
@@ -675,7 +735,8 @@
       font-size: .8rem;
     }
 
-    .contact-method a, .contact-method strong {
+    .contact-method a,
+    .contact-method strong {
       display: block;
       margin-top: 3px;
       overflow-wrap: anywhere;
@@ -684,7 +745,9 @@
       font-weight: 700;
     }
 
-    .contact-method a:hover { color: var(--cyan); }
+    .contact-method a:hover {
+      color: var(--cyan);
+    }
 
     .quote-form {
       display: grid;
@@ -705,9 +768,13 @@
       font-weight: 700;
     }
 
-    .field.full { grid-column: 1 / -1; }
+    .field.full {
+      grid-column: 1 / -1;
+    }
 
-    .field input, .field select, .field textarea {
+    .field input,
+    .field select,
+    .field textarea {
       width: 100%;
       min-height: 48px;
       padding: 12px 13px;
@@ -718,7 +785,8 @@
       outline: none;
     }
 
-    .field input::placeholder, .field textarea::placeholder {
+    .field input::placeholder,
+    .field textarea::placeholder {
       color: #8498b0;
     }
 
@@ -727,7 +795,9 @@
       background: #071526;
     }
 
-    .field input:focus, .field select:focus, .field textarea:focus {
+    .field input:focus,
+    .field select:focus,
+    .field textarea:focus {
       border-color: var(--cyan);
       box-shadow: 0 0 0 3px #76d6ff20;
     }
@@ -751,6 +821,71 @@
       text-align: center;
     }
 
+    /* SOCIAL MEDIA */
+    .social-section {
+      padding: 85px 0;
+      background: #ffffff;
+    }
+
+    .social-card {
+      position: relative;
+      overflow: hidden;
+      max-width: 850px;
+      margin: 0 auto;
+      padding: 45px;
+      text-align: center;
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      background:
+        radial-gradient(circle at 85% 15%, #2378e812, transparent 35%),
+        linear-gradient(135deg, #f7fbff, #eef5fc);
+      box-shadow: var(--shadow);
+    }
+
+    .social-icon {
+      width: 72px;
+      height: 72px;
+      display: grid;
+      place-items: center;
+      margin: 0 auto 22px;
+      border-radius: 20px;
+      color: white;
+      background: linear-gradient(145deg, #081526, #2378e8);
+      box-shadow: 0 12px 28px #2378e833;
+    }
+
+    .social-icon svg {
+      width: 38px;
+      height: 38px;
+    }
+
+    .social-card h2 {
+      margin-top: 0;
+      margin-bottom: 12px;
+    }
+
+    .social-card p {
+      max-width: 600px;
+      margin: 0 auto 25px;
+      color: var(--muted);
+      line-height: 1.8;
+    }
+
+    .social-handle {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      margin-bottom: 25px;
+      color: var(--navy);
+      font-weight: 800;
+      font-size: 1rem;
+    }
+
+    .social-handle:hover {
+      color: var(--blue);
+    }
+
+    /* FAQ */
     .faq-list {
       max-width: 820px;
       display: grid;
@@ -774,7 +909,9 @@
       list-style: none;
     }
 
-    .faq-list summary::-webkit-details-marker { display: none; }
+    .faq-list summary::-webkit-details-marker {
+      display: none;
+    }
 
     .faq-list summary::after {
       content: "+";
@@ -785,7 +922,9 @@
       font-size: 1.4rem;
     }
 
-    .faq-list details[open] summary::after { content: "−"; }
+    .faq-list details[open] summary::after {
+      content: "−";
+    }
 
     .faq-list details p {
       margin: 12px 0 0;
@@ -793,6 +932,7 @@
       line-height: 1.85;
     }
 
+    /* CLOSING */
     .closing {
       padding: 55px 0;
       background: #edf5ff;
@@ -821,6 +961,7 @@
       gap: 10px;
     }
 
+    /* FOOTER */
     footer {
       padding: 40px 0 20px;
       color: #b3c3d6;
@@ -835,9 +976,13 @@
       padding-bottom: 28px;
     }
 
-    footer .brand { color: white; }
+    footer .brand {
+      color: white;
+    }
 
-    footer .brand small { color: #a7b9cf; }
+    footer .brand small {
+      color: #a7b9cf;
+    }
 
     .footer-description {
       max-width: 390px;
@@ -853,7 +998,9 @@
       font-size: .85rem;
     }
 
-    .footer-links a:hover { color: var(--cyan); }
+    .footer-links a:hover {
+      color: var(--cyan);
+    }
 
     .footer-bottom {
       display: flex;
@@ -865,34 +1012,67 @@
       font-size: .78rem;
     }
 
-    a:focus-visible, button:focus-visible, summary:focus-visible {
+    a:focus-visible,
+    button:focus-visible,
+    summary:focus-visible {
       outline: 3px solid var(--cyan);
       outline-offset: 4px;
     }
 
+    /* RESPONSIVE */
     @media (max-width: 900px) {
-      .nav-links { gap: 15px; }
-      .hero-grid { gap: 30px; }
-      .hero-visual { min-height: 330px; }
-      .visual-frame { min-height: 330px; }
-      .about-grid { gap: 35px; }
-      .quote-wrap { gap: 30px; }
+      .nav-links {
+        gap: 15px;
+      }
+
+      .hero-grid {
+        gap: 30px;
+      }
+
+      .hero-visual {
+        min-height: 330px;
+      }
+
+      .visual-frame {
+        min-height: 330px;
+      }
+
+      .about-grid {
+        gap: 35px;
+      }
+
+      .quote-wrap {
+        gap: 30px;
+      }
     }
 
     @media (max-width: 720px) {
-      .container { width: min(100% - 32px, 540px); }
+      .container {
+        width: min(100% - 32px, 540px);
+      }
 
-      .topbar-inner { justify-content: center; text-align: center; }
-      .topbar-inner span { display: none; }
+      .topbar-inner {
+        justify-content: center;
+        text-align: center;
+      }
 
-      .nav { position: relative; }
+      .topbar-inner span {
+        display: none;
+      }
+
+      .nav {
+        position: relative;
+      }
+
       .nav-inner {
         padding: 15px 0;
         flex-wrap: wrap;
         gap: 15px;
       }
 
-      .brand { font-size: .92rem; }
+      .brand {
+        font-size: .92rem;
+      }
 
       .nav-links {
         width: 100%;
@@ -904,20 +1084,44 @@
         font-size: .84rem;
       }
 
-      .nav-links .btn { display: none; }
+      .nav-links .btn {
+        display: none;
+      }
 
-      .hero { padding: 65px 0 55px; }
-      .hero-grid, .about-grid, .quote-wrap { grid-template-columns: 1fr; }
+      .hero {
+        padding: 65px 0 55px;
+      }
 
-      .hero-grid { gap: 35px; }
+      .hero-grid,
+      .about-grid,
+      .quote-wrap {
+        grid-template-columns: 1fr;
+      }
 
-      h1 { font-size: clamp(2.7rem, 12vw, 4.1rem); }
+      .hero-grid {
+        gap: 35px;
+      }
 
-      .hero-copy { font-size: 1rem; }
-      .hero-visual { min-height: 310px; }
-      .visual-frame { min-height: 310px; }
+      h1 {
+        font-size: clamp(2.7rem, 12vw, 4.1rem);
+      }
 
-      .trust-grid { grid-template-columns: 1fr; padding: 10px 0; }
+      .hero-copy {
+        font-size: 1rem;
+      }
+
+      .hero-visual {
+        min-height: 310px;
+      }
+
+      .visual-frame {
+        min-height: 310px;
+      }
+
+      .trust-grid {
+        grid-template-columns: 1fr;
+        padding: 10px 0;
+      }
 
       .trust-item {
         justify-content: flex-start;
@@ -926,32 +1130,71 @@
         padding: 15px 6px;
       }
 
-      .trust-item:last-child { border-bottom: 0; }
+      .trust-item:last-child {
+        border-bottom: 0;
+      }
 
-      .section { padding: 65px 0; }
-      .services-grid, .process-grid { grid-template-columns: 1fr; }
+      .section,
+      .social-section {
+        padding: 65px 0;
+      }
 
-      .service-card { padding: 27px; }
+      .services-grid,
+      .process-grid {
+        grid-template-columns: 1fr;
+      }
 
-      .about-visual { min-height: 320px; }
-      .about-grid { gap: 30px; }
+      .service-card {
+        padding: 27px;
+      }
 
-      .quote-form { padding: 20px; grid-template-columns: 1fr; }
-      .field.full, .quote-form .btn, .form-note { grid-column: auto; }
+      .about-visual {
+        min-height: 320px;
+      }
 
-      .closing-inner, .footer-main, .footer-bottom {
+      .about-grid {
+        gap: 30px;
+      }
+
+      .quote-form {
+        padding: 20px;
+        grid-template-columns: 1fr;
+      }
+
+      .field.full,
+      .quote-form .btn,
+      .form-note {
+        grid-column: auto;
+      }
+
+      .social-card {
+        padding: 32px 22px;
+      }
+
+      .closing-inner,
+      .footer-main,
+      .footer-bottom {
         flex-direction: column;
         align-items: flex-start;
       }
 
-      .closing-actions { width: 100%; }
-      .closing-actions .btn { flex: 1; }
+      .closing-actions {
+        width: 100%;
+      }
 
-      .footer-links { gap: 14px; }
+      .closing-actions .btn {
+        flex: 1;
+      }
+
+      .footer-links {
+        gap: 14px;
+      }
     }
 
     @media (prefers-reduced-motion: reduce) {
-      *, *::before, *::after {
+      *,
+      *::before,
+      *::after {
         scroll-behavior: auto !important;
         transition-duration: .01ms !important;
       }
@@ -960,40 +1203,64 @@
 </head>
 
 <body>
+
+  <!-- TOP BAR -->
   <div class="topbar">
     <div class="container topbar-inner">
-      <span>Professional Wraping &amp; Insulation Services</span>
+      <span>Professional Wrapping &amp; Insulation Services</span>
       <a href="tel:+61470329052">Call our team: +61 470 329 052</a>
     </div>
   </div>
 
+  <!-- NAVIGATION -->
   <header class="nav">
     <div class="container nav-inner">
+
       <a class="brand" href="#home" aria-label="Waheguru Insulation home">
         <span class="brand-icon" aria-hidden="true">
           <svg viewBox="0 0 32 32" fill="none">
-            <path d="M4 15.5 16 5l12 10.5" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M8 14v13h16V14M13 27v-8h6v8" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M4 15.5 16 5l12 10.5"
+              stroke="currentColor"
+              stroke-width="2.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"/>
+            <path d="M8 14v13h16V14M13 27v-8h6v8"
+              stroke="currentColor"
+              stroke-width="2.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"/>
           </svg>
         </span>
-        <span>WAHEGURU INSULATION<small>Wraping · Insulation</small></span>
+
+        <span>
+          WAHEGURU INSULATION
+          <small>Wrapping · Insulation</small>
+        </span>
       </a>
 
       <nav class="nav-links" aria-label="Main navigation">
         <a href="#services">Services</a>
         <a href="#about">About us</a>
         <a href="#process">How it works</a>
+        <a href="#social">Social Media</a>
         <a href="#faq">FAQs</a>
         <a class="btn btn-primary" href="#quote">Request a quote ↗</a>
       </nav>
+
     </div>
   </header>
 
   <main>
+
+    <!-- HERO -->
     <section class="hero" id="home">
       <div class="container hero-grid">
+
         <div>
-          <div class="eyebrow"><span class="eyebrow-dot"></span> Your property. Our priority.</div>
+          <div class="eyebrow">
+            <span class="eyebrow-dot"></span>
+            Your property. Our priority.
+          </div>
 
           <h1>
             Better homes<br>
@@ -1002,448 +1269,199 @@
           </h1>
 
           <p class="hero-copy">
-            Welcome to Waheguru Insulation. We provide Wraping and insulation
+            Welcome to Waheguru Insulation. We provide wrapping and insulation
             services for property projects. Get in touch to discuss your
             requirements and request a quote.
           </p>
 
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#quote">Request a quote <span>↗</span></a>
-            <a class="btn btn-outline" href="#services">Explore our services ↓</a>
+            <a class="btn btn-primary" href="#quote">
+              Request a quote <span>↗</span>
+            </a>
+
+            <a class="btn btn-outline" href="#services">
+              Explore our services ↓
+            </a>
           </div>
 
           <div class="hero-note">
             <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-              <path d="M12 3 19 6v5c0 4.6-2.9 8-7 10-4.1-2-7-5.4-7-10V6l7-3Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
-              <path d="m9 12 2 2 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M12 3 19 6v5c0 4.6-2.9 8-7 10-4.1-2-7-5.4-7-10V6l7-3Z"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linejoin="round"/>
+              <path d="m9 12 2 2 4-4"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"/>
             </svg>
+
             Personal service. Clear communication. Straightforward enquiries.
           </div>
         </div>
 
+        <!-- HERO VISUAL -->
         <div class="hero-visual" aria-label="Illustration of a home">
           <div class="visual-frame">
+
             <div class="visual-pattern"></div>
+
             <div class="house-illustration">
-              <svg viewBox="0 0 420 350" fill="none" role="img" aria-label="Stylised house illustration">
+              <svg viewBox="0 0 420 350" fill="none"
+                role="img"
+                aria-label="Stylised house illustration">
+
                 <defs>
-                  <linearGradient id="roof" x1="100" y1="65" x2="320" y2="190" gradientUnits="userSpaceOnUse">
+                  <linearGradient id="roof"
+                    x1="100"
+                    y1="65"
+                    x2="320"
+                    y2="190"
+                    gradientUnits="userSpaceOnUse">
                     <stop stop-color="#8CE2FF"/>
                     <stop offset="1" stop-color="#287CE4"/>
                   </linearGradient>
-                  <linearGradient id="wall" x1="110" y1="150" x2="300" y2="300" gradientUnits="userSpaceOnUse">
+
+                  <linearGradient id="wall"
+                    x1="110"
+                    y1="150"
+                    x2="300"
+                    y2="300"
+                    gradientUnits="userSpaceOnUse">
                     <stop stop-color="#EAF5FF"/>
                     <stop offset="1" stop-color="#A8C9EA"/>
                   </linearGradient>
                 </defs>
-                <circle cx="210" cy="170" r="137" fill="#76D6FF" fill-opacity=".05"/>
-                <path d="M62 157 210 42l148 115" stroke="#76D6FF" stroke-opacity=".3" stroke-width="2" stroke-dasharray="7 8"/>
-                <path d="M85 159 210 62l125 97v137H85V159Z" fill="url(#wall)" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round"/>
-                <path d="M53 165 210 42l157 123-14 17L210 67 67 182l-14-17Z" fill="url(#roof)" stroke="#9EE5FF" stroke-width="2" stroke-linejoin="round"/>
-                <path d="M111 170h53v48h-53z" fill="#153C63" stroke="#6DADEB" stroke-width="3"/>
-                <path d="M137.5 170v48M111 194h53" stroke="#8AD8FF" stroke-width="2"/>
-                <path d="M256 170h53v48h-53z" fill="#153C63" stroke="#6DADEB" stroke-width="3"/>
-                <path d="M282.5 170v48M256 194h53" stroke="#8AD8FF" stroke-width="2"/>
-                <path d="M176 226h68v70h-68z" fill="#153C63" stroke="#FFFFFF" stroke-width="3"/>
+
+                <circle cx="210" cy="170" r="137"
+                  fill="#76D6FF"
+                  fill-opacity=".05"/>
+
+                <path d="M62 157 210 42l148 115"
+                  stroke="#76D6FF"
+                  stroke-opacity=".3"
+                  stroke-width="2"
+                  stroke-dasharray="7 8"/>
+
+                <path d="M85 159 210 62l125 97v137H85V159Z"
+                  fill="url(#wall)"
+                  stroke="#FFFFFF"
+                  stroke-width="3"
+                  stroke-linejoin="round"/>
+
+                <path d="M53 165 210 42l157 123-14 17L210 67 67 182l-14-17Z"
+                  fill="url(#roof)"
+                  stroke="#9EE5FF"
+                  stroke-width="2"
+                  stroke-linejoin="round"/>
+
+                <path d="M111 170h53v48h-53z"
+                  fill="#153C63"
+                  stroke="#6DADEB"
+                  stroke-width="3"/>
+
+                <path d="M137.5 170v48M111 194h53"
+                  stroke="#8AD8FF"
+                  stroke-width="2"/>
+
+                <path d="M256 170h53v48h-53z"
+                  fill="#153C63"
+                  stroke="#6DADEB"
+                  stroke-width="3"/>
+
+                <path d="M282.5 170v48M256 194h53"
+                  stroke="#8AD8FF"
+                  stroke-width="2"/>
+
+                <path d="M176 226h68v70h-68z"
+                  fill="#153C63"
+                  stroke="#FFFFFF"
+                  stroke-width="3"/>
+
                 <circle cx="231" cy="263" r="3" fill="#8AD8FF"/>
-                <path d="M104 296h212" stroke="#8AD8FF" stroke-width="3" stroke-linecap="round"/>
-                <path d="M94 312h232" stroke="#FFFFFF" stroke-opacity=".2" stroke-width="2" stroke-linecap="round"/>
-                <path d="m325 80 6-12 6 12 12 6-12 6-6 12-6-12-12-6 12-6Z" fill="#76D6FF"/>
+
+                <path d="M104 296h212"
+                  stroke="#8AD8FF"
+                  stroke-width="3"
+                  stroke-linecap="round"/>
+
+                <path d="M94 312h232"
+                  stroke="#FFFFFF"
+                  stroke-opacity=".2"
+                  stroke-width="2"
+                  stroke-linecap="round"/>
+
+                <path d="m325 80 6-12 6 12 12 6-12 6-6 12-6-12-12-6 12-6Z"
+                  fill="#76D6FF"/>
+
                 <circle cx="93" cy="99" r="5" fill="#76D6FF"/>
                 <circle cx="334" cy="240" r="4" fill="#76D6FF"/>
               </svg>
             </div>
+
             <div class="floating-card">
               <div class="floating-icon">
                 <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                  <path d="M12 3v18M3 12h18M5.6 5.6l12.8 12.8m0-12.8L5.6 18.4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+                  <path d="M12 3v18M3 12h18M5.6 5.6l12.8 12.8m0-12.8L5.6 18.4"
+                    stroke="currentColor"
+                    stroke-width="1.7"
+                    stroke-linecap="round"/>
                 </svg>
               </div>
+
               <div>
-                <strong>Wraping &amp; Insulation</strong>
+                <strong>Wrapping &amp; Insulation</strong>
                 <span>Our two core services, one point of contact</span>
               </div>
             </div>
+
           </div>
         </div>
+
       </div>
     </section>
 
+    <!-- TRUST -->
     <div class="trust-strip">
       <div class="container trust-grid">
+
         <div class="trust-item">
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-            <path d="M3 11 12 4l9 7M5.5 10v10h13V10M9 20v-6h6v6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M3 11 12 4l9 7M5.5 10v10h13V10M9 20v-6h6v6"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"/>
           </svg>
-          <div><strong>Property-focused</strong><span>Services for your project</span></div>
-        </div>
-        <div class="trust-item">
-          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-            <path d="M4 5h16v12H9l-5 3V5Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
-            <path d="M8 9h8M8 13h5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-          </svg>
-          <div><strong>Direct communication</strong><span>Discuss your requirements</span></div>
-        </div>
-        <div class="trust-item">
-          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-            <path d="M4 12a8 8 0 1 1 2.34 5.66M4 17v-5h5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="m9 12 2 2 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-          <div><strong>Quote enquiries</strong><span>Tell us about your job</span></div>
-        </div>
-      </div>
-    </div>
 
-    <section class="section" id="services">
-      <div class="container">
-        <div class="section-head">
-          <div class="kicker">What we do</div>
-          <h2>Our Services</h2>
-          <p>
-            We focus on two services: Wraping and insulation. Contact us to
-            discuss your property, explain the work you need and enquire about a quote.
-          </p>
-        </div>
-
-        <div class="services-grid">
-          <article class="service-card">
-            <div class="service-icon">
-              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                <path d="m3 9 9-6 9 6M5 9v12h14V9M9 21v-7h6v7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M8 10h8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-              </svg>
-            </div>
-            <h3>Wraping</h3>
-            <p>
-              Looking for Wraping services for your property? Tell us about
-              your project and the work you have in mind so we can discuss
-              your requirements.
-            </p>
-            <a class="service-link" href="#quote">Enquire about Wraping <span>→</span></a>
-          </article>
-
-          <article class="service-card">
-            <div class="service-icon">
-              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                <path d="M12 3v18M5 6.5l14 11M19 6.5l-14 11" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-                <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/>
-                <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.8"/>
-              </svg>
-            </div>
-            <h3>Insulation</h3>
-            <p>
-              Get in touch about your insulation requirements. Share details
-              about your property and project so we can understand what
-              you're looking for.
-            </p>
-            <a class="service-link" href="#quote">Enquire about insulation <span>→</span></a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-soft" id="about">
-      <div class="container about-grid">
-        <div class="about-visual">
-          <svg viewBox="0 0 420 330" fill="none" role="img" aria-label="Illustration of a well-designed home">
-            <path d="m48 147 162-116 162 116" stroke="#78D7FF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M79 137v153h262V137L210 43 79 137Z" fill="#E7F2FF" stroke="#A7D7FF" stroke-width="3" stroke-linejoin="round"/>
-            <path d="M56 151 210 37l154 114" stroke="#4C9CEB" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M112 166h61v54h-61zM247 166h61v54h-61z" fill="#123353" stroke="#75CCFF" stroke-width="3"/>
-            <path d="M142 166v54m-30-27h61m104-27v54m-30-27h61" stroke="#75CCFF" stroke-width="2"/>
-            <path d="M183 216h54v74h-54z" fill="#123353" stroke="#75CCFF" stroke-width="3"/>
-            <circle cx="225" cy="255" r="3" fill="#75CCFF"/>
-            <path d="M65 291h290" stroke="#75CCFF" stroke-opacity=".65" stroke-width="3" stroke-linecap="round"/>
-            <path d="M34 309h352" stroke="#FFFFFF" stroke-opacity=".3" stroke-width="2" stroke-linecap="round"/>
-            <circle cx="95" cy="75" r="5" fill="#75D8FF"/>
-            <circle cx="333" cy="89" r="4" fill="#75D8FF"/>
-          </svg>
-          <div class="about-label">
-            <strong>Waheguru Insulation</strong>
-            <span>Wraping and insulation services</span>
+          <div>
+            <strong>Property-focused</strong>
+            <span>Services for your project</span>
           </div>
         </div>
 
-        <div class="about-copy">
-          <div class="kicker">About our company</div>
-          <h2>Focused on the work that matters.</h2>
-          <p>
-            At Waheguru Insulation, we focus on Wraping and insulation
-            services. We understand that every property and project has
-            different requirements, so we invite you to get in touch and
-            explain what you need.
-          </p>
-          <p>
-            From your first enquiry to discussing the next steps, our aim
-            is to make communication straightforward and help you understand
-            the options for your project.
-          </p>
+        <div class="trust-item">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M4 5h16v12H9l-5 3V5Z"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linejoin="round"/>
+            <path d="M8 9h8M8 13h5"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"/>
+          </svg>
 
-          <div class="benefits">
-            <div class="benefit">
-              <span class="check">✓</span>
-              <div><strong>Two dedicated services</strong><span>Wraping and insulation are our focus.</span></div>
-            </div>
-            <div class="benefit">
-              <span class="check">✓</span>
-              <div><strong>Enquiries made simple</strong><span>Contact us by phone, email or the quote form.</span></div>
-            </div>
-            <div class="benefit">
-              <span class="check">✓</span>
-              <div><strong>Discuss your requirements</strong><span>Share your project details directly with us.</span></div>
-            </div>
+          <div>
+            <strong>Direct communication</strong>
+            <span>Discuss your requirements</span>
           </div>
-
-          <a class="btn btn-primary" href="#quote">Talk to our team ↗</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="process">
-      <div class="container">
-        <div class="section-head">
-          <div class="kicker">Getting started</div>
-          <h2>How It Works</h2>
-          <p>Getting in touch about your project is simple.</p>
         </div>
 
-        <div class="process-grid">
-          <article class="process-card">
-            <div class="process-number">01</div>
-            <h3>Tell us what you need</h3>
-            <p>Choose Wraping or insulation and describe your property and project.</p>
-          </article>
-          <article class="process-card">
-            <div class="process-number">02</div>
-            <h3>Discuss your enquiry</h3>
-            <p>We can discuss your requirements and any information needed about the job.</p>
-          </article>
-          <article class="process-card">
-            <div class="process-number">03</div>
-            <h3>Request your quote</h3>
-            <p>Contact us to discuss the next steps and a quote for your project.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section quote-section" id="quote">
-      <div class="container">
-        <div class="section-head">
-          <div class="kicker" style="color:#8cddff">Contact our team</div>
-          <h2>Let's discuss your project.</h2>
-          <p>
-            Tell us about your Wraping or insulation requirements.
-            Complete the form to prepare an enquiry by email.
-          </p>
-        </div>
-
-        <div class="quote-wrap">
-          <div class="contact-info">
-            <h3>Get in touch</h3>
-            <p>
-              Have questions about your project? Contact Waheguru Insulation
-              directly, or send your details using the form.
-            </p>
-
-            <div class="contact-method">
-              <div class="contact-icon">
-                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                  <path d="M5 3h4l2 5-3 2a15 15 0 0 0 6 6l2-3 5 2v4c0 1-1 2-2 2C10 20 4 14 3 5c0-1 1-2 2-2Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </div>
-              <div>
-                <small>Phone</small>
-                <a href="tel:+61470329052">+61 470 329 052</a>
-              </div>
-            </div>
-
-            <div class="contact-method">
-              <div class="contact-icon">
-                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                  <rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.8"/>
-                  <path d="m4 7 8 6 8-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </div>
-              <div>
-                <small>Email</small>
-                <a href="mailto:Waheguruinsulationservice@gmail.com">Waheguruinsulationservice@gmail.com</a>
-              </div>
-            </div>
-
-            <div class="contact-method">
-              <div class="contact-icon">
-                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                  <path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z" stroke="currentColor" stroke-width="1.8"/>
-                  <circle cx="12" cy="10" r="2.5" stroke="currentColor" stroke-width="1.8"/>
-                </svg>
-              </div>
-              <div>
-                <small>Service enquiries</small>
-                <strong>Contact us to discuss your location</strong>
-              </div>
-            </div>
-          </div>
-
-          <form class="quote-form" id="quote-form">
-            <label class="field">
-              Full name
-              <input name="name" autocomplete="name" required placeholder="Your full name">
-            </label>
-
-            <label class="field">
-              Phone number
-              <input name="phone" type="tel" autocomplete="tel" required placeholder="Your phone number">
-            </label>
-
-            <label class="field">
-              Email address
-              <input name="email" type="email" autocomplete="email" required placeholder="you@example.com">
-            </label>
-
-            <label class="field">
-              Suburb or area
-              <input name="suburb" autocomplete="address-level2" placeholder="Your suburb">
-            </label>
-
-            <label class="field full">
-              Service required
-              <select name="service" required>
-                <option value="" disabled selected>Select a service</option>
-                <option value="Wraping">Wraping</option>
-                <option value="Insulation">Insulation</option>
-                <option value="Wraping and Insulation">Wraping and Insulation</option>
-              </select>
-            </label>
-
-            <label class="field full">
-              Tell us about your project
-              <textarea name="details" required placeholder="Describe the work you need and any relevant details."></textarea>
-            </label>
-
-            <button class="btn btn-primary" type="submit">Prepare my enquiry ↗</button>
-            <p class="form-note">Your email app will open so you can review and send your enquiry.</p>
-          </form>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-soft" id="faq">
-      <div class="container">
-        <div class="section-head">
-          <div class="kicker">Common questions</div>
-          <h2>Frequently Asked Questions</h2>
-          <p>Some useful information before you get in touch.</p>
-        </div>
-
-        <div class="faq-list">
-          <details>
-            <summary>What services does Waheguru Insulation provide?</summary>
-            <p>Our services are Wraping and insulation. Contact us to explain your project requirements.</p>
-          </details>
-
-          <details>
-            <summary>How can I request a quote?</summary>
-            <p>Complete the enquiry form on this page or contact us by phone or email to discuss your job.</p>
-          </details>
-
-          <details>
-            <summary>What information should I provide?</summary>
-            <p>Include your name, contact details, suburb, the service you need and a description of your project.</p>
-          </details>
-
-          <details>
-            <summary>Can I enquire about both services?</summary>
-            <p>Yes. Select “Wraping and Insulation” in the form and describe the work you are considering.</p>
-          </details>
-
-          <details>
-            <summary>How do I contact the company directly?</summary>
-            <p>Call +61 470 329 052 or email Waheguruinsulationservice@gmail.com.</p>
-          </details>
-        </div>
-      </div>
-    </section>
-
-    <section class="closing">
-      <div class="container closing-inner">
-        <div>
-          <h2>Have a project in mind?</h2>
-          <p>Get in touch with Waheguru Insulation to discuss your requirements.</p>
-        </div>
-        <div class="closing-actions">
-          <a class="btn btn-primary" href="#quote">Request a quote ↗</a>
-          <a class="btn btn-outline" href="tel:+61470329052">Call us</a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="container">
-      <div class="footer-main">
-        <div>
-          <a class="brand" href="#home">
-            <span class="brand-icon" aria-hidden="true">
-              <svg viewBox="0 0 32 32" fill="none">
-                <path d="M4 15.5 16 5l12 10.5" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M8 14v13h16V14M13 27v-8h6v8" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </span>
-            <span>WAHEGURU INSULATION<small>Wraping · Insulation</small></span>
-          </a>
-          <p class="footer-description">
-            Providing Wraping and insulation services. Contact us to discuss
-            your property project and enquire about a quote.
-          </p>
-        </div>
-
-        <nav class="footer-links" aria-label="Footer navigation">
-          <a href="#home">Home</a>
-          <a href="#services">Services</a>
-          <a href="#about">About</a>
-          <a href="#quote">Get a quote</a>
-          <a href="#faq">FAQs</a>
-          <a href="mailto:Waheguruinsulationservice@gmail.com">Email</a>
-        </nav>
-      </div>
-
-      <div class="footer-bottom">
-        <span>© <span id="year"></span> Waheguru Insulation. All rights reserved.</span>
-        <span>Wraping &amp; Insulation Services</span>
-      </div>
-    </div>
-  </footer>
-
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-
-    document.getElementById("quote-form").addEventListener("submit", function(event) {
-      event.preventDefault();
-
-      const form = event.currentTarget;
-      if (!form.reportValidity()) return;
-
-      const data = new FormData(form);
-
-      const subject = encodeURIComponent(
-        "Quote enquiry - " + data.get("service")
-      );
-
-      const body = encodeURIComponent(
-        "New enquiry for Waheguru Insulation\n\n" +
-        "Name: " + data.get("name") + "\n" +
-        "Phone: " + data.get("phone") + "\n" +
-        "Email: " + data.get("email") + "\n" +
-        "Suburb / area: " + (data.get("suburb") || "Not provided") + "\n" +
-        "Service required: " + data.get("service") + "\n\n" +
-        "Project details:\n" + data.get("details")
-      );
-
-      window.location.href =
-        "mailto:Waheguruinsulationservice@gmail.com?subject=" +
-        subject + "&body=" + body;
-    });
-  </script>
-</body>
-</html>
+        <div class="trust-item">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M4 12a8 8 0 1 1 2.34 5.66M4 17v-5h5"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round
