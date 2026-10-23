@@ -2,288 +2,431 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Waheguru Insulation Service</title>
-<meta name="description" content="Contact Waheguru Insulation Service to discuss insulation services and request a quote.">
-<style>
-:root {
-  --blue: #087BFF;
-  --background: #050A16;
-  --text: #F2F6FF;
-  --muted: #B5C6E6;
-}
-* { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background: var(--background);
-  color: var(--text);
-}
-a { color: inherit; text-decoration: none; }
-.nav {
-  max-width: 1120px;
-  margin: auto;
-  padding: 20px 24px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 18px;
-}
-.logo { font-weight: 900; letter-spacing: .08em; }
-.logo span { color: #48B8FF; }
-.nav-links { display: flex; gap: 24px; color: #B9C8E8; }
-.nav-links a:hover { color: #65C5FF; }
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Waheguru Insulation | Professional Home Insulation</title>
+  <meta name="description" content="Waheguru Insulation provides professional insulation services for homes. Contact us for a quote.">
 
-.hero {
-  text-align: center;
-  padding: 65px 22px 90px;
-  background: radial-gradient(ellipse at 50% 0%, #123D82, #0A1630 45%, #050A16 80%);
-}
-.brand-logo {
-  display: block;
-  width: clamp(190px, 32vw, 330px);
-  max-width: 85%;
-  height: auto;
-  margin: 0 auto 28px;
-  border-radius: 50%;
-  box-shadow: 0 0 36px #087BFF66;
-}
-.eyebrow {
-  display: inline-block;
-  color: #8CD6FF;
-  background: #0C2A51;
-  border: 1px solid #1C5CA0;
-  padding: 9px 14px;
-  border-radius: 999px;
-  text-transform: uppercase;
-  letter-spacing: .12em;
-  font-size: .75rem;
-  font-weight: bold;
-}
-h1 {
-  font-size: clamp(2.6rem, 8vw, 6rem);
-  line-height: 1;
-  letter-spacing: -.05em;
-  margin: 28px auto 20px;
-  max-width: 950px;
-}
-.glow {
-  color: #65C5FF;
-  text-shadow: 0 0 30px #087BFF88;
-}
-.hero p {
-  max-width: 620px;
-  margin: 0 auto;
-  color: var(--muted);
-  line-height: 1.8;
-  font-size: 1.05rem;
-}
-.actions {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 12px;
-  margin-top: 28px;
-}
-.btn {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  padding: 14px 20px;
-  border: 1px solid #24528A;
-  border-radius: 12px;
-  font-weight: bold;
-  transition: .2s;
-}
-.btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 28px #087BFF44;
-}
-.btn-primary {
-  background: var(--blue);
-  border-color: #4DA1FF;
-  color: white;
-}
-.btn-secondary {
-  background: #0D1830;
-  color: #EAF4FF;
-}
-.section {
-  max-width: 1120px;
-  margin: auto;
-  padding: 75px 24px;
-}
-.section-head { text-align: center; margin-bottom: 32px; }
-.kicker {
-  color: #58BFFF;
-  text-transform: uppercase;
-  font-size: .75rem;
-  letter-spacing: .18em;
-  font-weight: 900;
-}
-h2 {
-  font-size: clamp(2rem, 4vw, 3rem);
-  letter-spacing: -.04em;
-  margin: 12px 0;
-}
-.section-head p, .join p {
-  color: #9FB1D1;
-  line-height: 1.7;
-}
-.section-head p { max-width: 600px; margin: auto; }
-.cards {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 16px;
-}
-.card {
-  padding: 26px;
-  background: linear-gradient(145deg, #101D38, #091225);
-  border: 1px solid #1B2F51;
-  border-radius: 18px;
-}
-.card-icon {
-  width: 48px;
-  height: 48px;
-  display: grid;
-  place-items: center;
-  border-radius: 13px;
-  background: #0B2D55;
-  color: #71CBFF;
-  font-size: 1.5rem;
-  margin-bottom: 20px;
-}
-.card h3 { margin: 0 0 10px; }
-.card p { color: #9FB1D1; line-height: 1.7; }
-.join {
-  max-width: 1072px;
-  margin: 0 auto 70px;
-  padding: 44px 24px;
-  text-align: center;
-  border-radius: 22px;
-  border: 1px solid #20528A;
-  background: radial-gradient(ellipse at top, #123C78, #0A1429 70%);
-}
-footer {
-  border-top: 1px solid #172642;
-  padding: 24px;
-  text-align: center;
-  color: #7588AA;
-  font-size: .85rem;
-}
-@media (max-width: 700px) {
-  .nav { padding: 18px; flex-wrap: wrap; }
-  .nav-links { gap: 14px; font-size: .85rem; }
-  .cards { grid-template-columns: 1fr; }
-  .section { padding: 55px 18px; }
-  .hero { padding-top: 45px; }
-}
-</style>
+  <style>
+    :root {
+      --blue: #087BFF;
+      --light-blue: #65C5FF;
+      --background: #050A16;
+      --card: #101D38;
+      --text: #F2F6FF;
+      --muted: #B5C6E6;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--background);
+      color: var(--text);
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .nav {
+      max-width: 1120px;
+      margin: auto;
+      padding: 20px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 18px;
+    }
+
+    .logo {
+      font-weight: 900;
+      letter-spacing: .08em;
+      font-size: 1rem;
+    }
+
+    .logo span {
+      color: var(--light-blue);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 22px;
+      color: #B9C8E8;
+      font-size: .9rem;
+    }
+
+    .nav-links a:hover {
+      color: var(--light-blue);
+    }
+
+    .hero {
+      text-align: center;
+      padding: 90px 22px 85px;
+      background: radial-gradient(
+        ellipse at 50% 0%,
+        #123D82 0%,
+        #0A1630 42%,
+        #050A16 78%
+      );
+    }
+
+    .brand-logo {
+      display: block;
+      width: clamp(180px, 30vw, 300px);
+      height: auto;
+      margin: 0 auto 28px;
+      border-radius: 50%;
+      box-shadow: 0 0 36px #087BFF44;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      color: #8CD6FF;
+      background: #0C2A51;
+      border: 1px solid #1C5CA0;
+      padding: 9px 14px;
+      border-radius: 999px;
+      text-transform: uppercase;
+      letter-spacing: .12em;
+      font-size: .72rem;
+      font-weight: 800;
+    }
+
+    h1 {
+      font-size: clamp(2.8rem, 8vw, 6rem);
+      line-height: 1;
+      letter-spacing: -.055em;
+      margin: 26px auto 20px;
+      max-width: 950px;
+    }
+
+    h1 span {
+      color: var(--light-blue);
+      text-shadow: 0 0 36px #087BFF88;
+    }
+
+    .hero p {
+      max-width: 650px;
+      margin: 0 auto;
+      color: var(--muted);
+      line-height: 1.8;
+      font-size: 1.05rem;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 28px;
+    }
+
+    .btn {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      gap: 9px;
+      padding: 14px 20px;
+      border-radius: 12px;
+      border: 1px solid #24528A;
+      font: inherit;
+      font-weight: 800;
+      cursor: pointer;
+      transition: transform .2s, box-shadow .2s;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 28px #087BFF33;
+    }
+
+    .btn-primary {
+      background: var(--blue);
+      color: #FFFFFF;
+      border-color: #4DA1FF;
+    }
+
+    .btn-secondary {
+      background: #0D1830;
+      color: #EAF4FF;
+    }
+
+    .section {
+      max-width: 1120px;
+      margin: auto;
+      padding: 75px 24px;
+    }
+
+    .section-head {
+      text-align: center;
+      margin-bottom: 35px;
+    }
+
+    .kicker {
+      color: #58BFFF;
+      text-transform: uppercase;
+      font-size: .75rem;
+      letter-spacing: .18em;
+      font-weight: 900;
+    }
+
+    h2 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      letter-spacing: -.04em;
+      margin: 12px 0;
+    }
+
+    .section-head p {
+      color: #9FB1D1;
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      padding: 28px;
+      background: linear-gradient(145deg, #101D38, #091225);
+      border: 1px solid #1B2F51;
+      border-radius: 18px;
+      transition: transform .2s, border-color .2s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      border-color: #358CFF;
+    }
+
+    .card-icon {
+      width: 52px;
+      height: 52px;
+      display: grid;
+      place-items: center;
+      border-radius: 14px;
+      background: #0B2D55;
+      color: #71CBFF;
+      font-size: 1.6rem;
+      margin-bottom: 20px;
+    }
+
+    .card h3 {
+      margin: 0 0 12px;
+      font-size: 1.25rem;
+    }
+
+    .card p {
+      margin: 0;
+      color: #9FB1D1;
+      line-height: 1.8;
+      font-size: .95rem;
+    }
+
+    .contact-section {
+      max-width: 1072px;
+      margin: 0 auto 70px;
+      padding: 45px 24px;
+      text-align: center;
+      border-radius: 22px;
+      border: 1px solid #20528A;
+      background: radial-gradient(
+        ellipse at top,
+        #123C78,
+        #0A1429 70%
+      );
+    }
+
+    .contact-section p {
+      color: var(--muted);
+      line-height: 1.8;
+    }
+
+    footer {
+      border-top: 1px solid #172642;
+      padding: 25px;
+      text-align: center;
+      color: #7588AA;
+      font-size: .85rem;
+    }
+
+    @media (max-width: 700px) {
+      .nav {
+        flex-direction: column;
+        padding: 18px;
+      }
+
+      .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 14px;
+      }
+
+      .hero {
+        padding: 65px 18px;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      .section {
+        padding: 55px 18px;
+      }
+
+      .contact-section {
+        margin: 0 14px 45px;
+        padding: 35px 18px;
+      }
+    }
+  </style>
 </head>
+
 <body>
-<header class="nav">
-  <a class="logo" href="#home">WAHEGURU <span>INSULATION</span></a>
-  <nav class="nav-links" aria-label="Main navigation">
-    <a href="#services">Services</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
+  <header class="nav">
+    <a class="logo" href="#home">
+      WAHEGURU<span> INSULATION</span>
+    </a>
 
-<main>
-  <section class="hero" id="home">
-    <img
-      class="brand-logo"
-      src="https://raw.githubusercontent.com/ytfiners-commits/Waheguru-Insulation/main/logo.png"
-      alt="Waheguru Insulation Service logo"
-      onerror="this.style.display='none'"
-    >
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="#features">Services</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-    <div class="eyebrow">Comfort · Quality · Reliability</div>
-    <h1>INSULATION FOR <span class="glow">A BETTER HOME.</span></h1>
-    <p>
-      Welcome to Waheguru Insulation Service. Get in touch to discuss
-      your insulation project and request a quote.
-    </p>
+  <main>
+    <section class="hero" id="home">
+      <img
+        class="brand-logo"
+        src="https://raw.githubusercontent.com/ytfiners-commits/Waheguru-Insulation/main/logo.png"
+        alt="Waheguru Insulation Service logo"
+        onerror="this.style.display='none'"
+      >
 
-    <div class="actions">
-      <a class="btn btn-primary" href="#contact">Get a Quote</a>
-      <a class="btn btn-secondary" href="#services">Explore Services ↓</a>
-    </div>
-  </section>
+      <div class="eyebrow">
+        Comfort · Quality · Reliability
+      </div>
 
-  <section class="section" id="services">
-    <div class="section-head">
-      <div class="kicker">What We Do</div>
-      <h2>Our Insulation Services</h2>
-      <p>Contact us to discuss your property, insulation needs and project requirements.</p>
-    </div>
+      <h1>
+        INSULATION FOR
+        <span>A BETTER HOME.</span>
+      </h1>
 
-    <div class="cards">
-      <article class="card">
-        <div class="card-icon">⌂</div>
-        <h3>Home Insulation</h3>
-        <p>Ask us about insulation options for your home and your project requirements.</p>
-      </article>
-
-      <article class="card">
-        <div class="card-icon">✦</div>
-        <h3>Quality Workmanship</h3>
-        <p>We welcome your questions and aim to help you find a suitable solution for your project.</p>
-      </article>
-
-      <article class="card">
-        <div class="card-icon">▣</div>
-        <h3>Request a Quote</h3>
-        <p>Contact us with your project details to discuss your needs and request a quote.</p>
-      </article>
-    </div>
-  </section>
-
-  <section class="section" id="about">
-    <div class="section-head">
-      <div class="kicker">About Us</div>
-      <h2>Waheguru Insulation Service</h2>
       <p>
-        We welcome enquiries about insulation projects. Get in touch
-        to discuss your requirements and the next steps.
+        Welcome to Waheguru Insulation. We help homeowners explore
+        insulation services for their properties. Contact us to discuss
+        your project and request a quote.
       </p>
-    </div>
-  </section>
 
-  <section class="join" id="contact">
-    <div class="kicker">Let's Discuss Your Project</div>
-    <h2>Contact Us Today</h2>
-    <p>Choose whether to email us or call us directly.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="#contact">
+          ✉ Get in touch
+        </a>
 
-    <div class="actions">
-      <a class="btn btn-primary"
-         href="mailto:Waheguruinsulationservice@gmail.com">
-        ✉ Email Us
-      </a>
-      <a class="btn btn-secondary"
-         href="tel:+61470329052">
-        ☎ +61 470 329 052
-      </a>
-    </div>
+        <a class="btn btn-secondary" href="#features">
+          Explore our services ↓
+        </a>
+      </div>
+    </section>
 
-    <p>
-      Email:
-      <a href="mailto:Waheguruinsulationservice@gmail.com">
-        Waheguruinsulationservice@gmail.com
-      </a>
-    </p>
-  </section>
-</main>
+    <section class="section" id="features">
+      <div class="section-head">
+        <div class="kicker">What we do</div>
+        <h2>Our Services</h2>
+        <p>
+          Explore our services and contact us to discuss what your
+          home or project needs.
+        </p>
+      </div>
 
-<footer>
-  © <span id="year"></span> Waheguru Insulation Service · All rights reserved
-</footer>
+      <div class="cards">
+        <article class="card">
+          <div class="card-icon">⌂</div>
+          <h3>Warping</h3>
+          <p>Professional Warping services for homes.</p>
+        </article>
 
-<script>
-document.getElementById("year").textContent = new Date().getFullYear();
-</script>
+        <article class="card">
+          <div class="card-icon">✦</div>
+          <h3>Insulation</h3>
+          <p>
+            Professional insulation services for homes.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="card-icon">▣</div>
+          <h3>Request a quote</h3>
+          <p>
+            Invite customers to contact you with their project
+            details for a quote.
+          </p>
+          <div class="actions">
+            <a class="btn btn-primary" href="#contact">
+              Request a quote
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="section-head">
+        <div class="kicker">About us</div>
+        <h2>Waheguru Insulation</h2>
+        <p>
+          We welcome enquiries about home insulation projects.
+          Get in touch to discuss your requirements and the next steps.
+        </p>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="kicker">Let's discuss your project</div>
+      <h2>Contact Us</h2>
+      <p>
+        Have a project in mind? Email or call us to discuss your
+        requirements and request a quote.
+      </p>
+
+      <div class="actions">
+        <a
+          class="btn btn-primary"
+          href="mailto:Waheguruinsulationservice@gmail.com"
+        >
+          ✉ Email us
+        </a>
+
+        <a
+          class="btn btn-secondary"
+          href="tel:+61470329052"
+        >
+          ☎ +61 470 329 052
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="year"></span> Waheguru Insulation · All rights reserved
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+  </script>
 </body>
 </html>
