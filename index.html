@@ -1,91 +1,90 @@
-
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Waheguru Insulation | Professional Home Insulation</title>
-  <meta name="description" content="Waheguru Insulation provides professional insulation services for homes. Contact us for a quote.">
+  <meta name="description" content="Waheguru Insulation provides home insulation services. Contact us for a quote.">
+  <meta name="theme-color" content="#071426">
 
   <style>
     :root {
       --blue: #087BFF;
-      --light-blue: #65C5FF;
-      --background: #050A16;
+      --cyan: #65C5FF;
+      --bg: #050A16;
       --card: #101D38;
       --text: #F2F6FF;
       --muted: #B5C6E6;
+      --border: #243D62;
     }
 
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
     html {
       scroll-behavior: smooth;
+      scroll-padding-top: 90px;
     }
 
     body {
       margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: var(--background);
+      font-family: Inter, Arial, Helvetica, sans-serif;
+      background: var(--bg);
       color: var(--text);
+      line-height: 1.6;
     }
 
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
+    a { color: inherit; text-decoration: none; }
+
+    img { max-width: 100%; }
 
     .nav {
-      max-width: 1120px;
-      margin: auto;
-      padding: 20px 24px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      gap: 18px;
+      gap: 20px;
+      padding: 16px max(22px, calc((100% - 1120px) / 2));
+      background: rgba(5, 10, 22, .92);
+      border-bottom: 1px solid #20395B;
+      backdrop-filter: blur(18px);
     }
 
     .logo {
       font-weight: 900;
-      letter-spacing: .08em;
-      font-size: 1rem;
+      letter-spacing: .06em;
+      white-space: nowrap;
     }
 
-    .logo span {
-      color: var(--light-blue);
-    }
+    .logo span { color: var(--cyan); }
 
     .nav-links {
       display: flex;
-      gap: 22px;
-      color: #B9C8E8;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      color: var(--muted);
       font-size: .9rem;
     }
 
-    .nav-links a:hover {
-      color: var(--light-blue);
-    }
+    .nav-links a:hover { color: var(--cyan); }
 
     .hero {
       text-align: center;
       padding: 90px 22px 85px;
-      background: radial-gradient(
-        ellipse at 50% 0%,
-        #123D82 0%,
-        #0A1630 42%,
-        #050A16 78%
-      );
+      background:
+        radial-gradient(ellipse at 50% 0%, #174B91 0%, #0A1630 42%, #050A16 78%);
+      overflow: hidden;
     }
 
     .brand-logo {
       display: block;
-      width: clamp(180px, 30vw, 300px);
+      width: clamp(170px, 27vw, 270px);
       height: auto;
       margin: 0 auto 28px;
       border-radius: 50%;
-      box-shadow: 0 0 36px #087BFF44;
+      box-shadow: 0 0 45px #087BFF44;
     }
 
     .eyebrow {
@@ -93,32 +92,33 @@
       color: #8CD6FF;
       background: #0C2A51;
       border: 1px solid #1C5CA0;
-      padding: 9px 14px;
+      padding: 8px 14px;
       border-radius: 999px;
       text-transform: uppercase;
       letter-spacing: .12em;
-      font-size: .72rem;
+      font-size: .73rem;
       font-weight: 800;
     }
 
     h1 {
       font-size: clamp(2.8rem, 8vw, 6rem);
-      line-height: 1;
+      line-height: 1.02;
       letter-spacing: -.055em;
-      margin: 26px auto 20px;
+      margin: 25px auto 20px;
       max-width: 950px;
     }
 
     h1 span {
-      color: var(--light-blue);
-      text-shadow: 0 0 36px #087BFF88;
+      display: block;
+      color: var(--cyan);
+      text-shadow: 0 0 35px #087BFF66;
     }
 
     .hero p {
       max-width: 650px;
       margin: 0 auto;
       color: var(--muted);
-      line-height: 1.8;
+      line-height: 1.9;
       font-size: 1.05rem;
     }
 
@@ -135,23 +135,23 @@
       justify-content: center;
       align-items: center;
       gap: 9px;
-      padding: 14px 20px;
-      border-radius: 12px;
+      padding: 13px 20px;
+      border-radius: 11px;
       border: 1px solid #24528A;
       font: inherit;
       font-weight: 800;
       cursor: pointer;
-      transition: transform .2s, box-shadow .2s;
+      transition: .2s ease;
     }
 
     .btn:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 8px 28px #087BFF33;
+      transform: translateY(-3px);
+      box-shadow: 0 10px 28px #087BFF33;
     }
 
     .btn-primary {
       background: var(--blue);
-      color: #FFFFFF;
+      color: white;
       border-color: #4DA1FF;
     }
 
@@ -168,11 +168,12 @@
 
     .section-head {
       text-align: center;
-      margin-bottom: 35px;
+      max-width: 760px;
+      margin: 0 auto 35px;
     }
 
     .kicker {
-      color: #58BFFF;
+      color: var(--cyan);
       text-transform: uppercase;
       font-size: .75rem;
       letter-spacing: .18em;
@@ -182,14 +183,14 @@
     h2 {
       font-size: clamp(2rem, 4vw, 3rem);
       letter-spacing: -.04em;
+      line-height: 1.15;
       margin: 12px 0;
     }
 
     .section-head p {
       color: #9FB1D1;
-      max-width: 600px;
+      line-height: 1.8;
       margin: 0 auto;
-      line-height: 1.7;
     }
 
     .cards {
@@ -199,16 +200,17 @@
     }
 
     .card {
-      padding: 28px;
-      background: linear-gradient(145deg, #101D38, #091225);
-      border: 1px solid #1B2F51;
+      padding: 27px;
+      background: linear-gradient(145deg, #122442, #091225);
+      border: 1px solid var(--border);
       border-radius: 18px;
-      transition: transform .2s, border-color .2s;
+      transition: .25s ease;
     }
 
     .card:hover {
       transform: translateY(-5px);
-      border-color: #358CFF;
+      border-color: var(--blue);
+      box-shadow: 0 15px 35px #0004;
     }
 
     .card-icon {
@@ -218,21 +220,145 @@
       place-items: center;
       border-radius: 14px;
       background: #0B2D55;
-      color: #71CBFF;
+      color: var(--cyan);
       font-size: 1.6rem;
       margin-bottom: 20px;
     }
 
-    .card h3 {
-      margin: 0 0 12px;
-      font-size: 1.25rem;
-    }
+    .card h3 { margin: 0 0 10px; }
 
     .card p {
       margin: 0;
       color: #9FB1D1;
       line-height: 1.8;
-      font-size: .95rem;
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .info-card {
+      padding: 24px;
+      background: #0B152A;
+      border: 1px solid var(--border);
+      border-radius: 15px;
+    }
+
+    .info-card h3 { margin-top: 0; }
+
+    .info-card p {
+      color: var(--muted);
+      margin-bottom: 0;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .gallery-item {
+      overflow: hidden;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      background: #0B152A;
+    }
+
+    .gallery-item img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      transition: transform .3s ease;
+    }
+
+    .gallery-item:hover img { transform: scale(1.04); }
+
+    .gallery-item div {
+      padding: 15px;
+      font-weight: 800;
+    }
+
+    .review-panel {
+      max-width: 800px;
+      margin: auto;
+      padding: 30px;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      background: linear-gradient(145deg, #101D38, #091225);
+      text-align: center;
+    }
+
+    .review-panel p { color: var(--muted); }
+
+    .stars {
+      color: var(--cyan);
+      font-size: 1.4rem;
+      letter-spacing: .15em;
+    }
+
+    .quote-form {
+      max-width: 760px;
+      margin: 28px auto 0;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 15px;
+    }
+
+    .field {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+      color: #C9D8F1;
+      font-size: .9rem;
+      font-weight: 700;
+    }
+
+    .field.full { grid-column: 1 / -1; }
+
+    .field input,
+    .field select,
+    .field textarea {
+      width: 100%;
+      padding: 13px;
+      border: 1px solid #29456E;
+      border-radius: 10px;
+      background: #071226;
+      color: white;
+      font: inherit;
+    }
+
+    .field textarea {
+      min-height: 130px;
+      resize: vertical;
+    }
+
+    .quote-form button { grid-column: 1 / -1; }
+
+    .faq-list {
+      max-width: 800px;
+      margin: auto;
+      display: grid;
+      gap: 12px;
+    }
+
+    .faq-list details {
+      padding: 18px 20px;
+      border: 1px solid var(--border);
+      border-radius: 13px;
+      background: #0B152A;
+    }
+
+    .faq-list summary {
+      cursor: pointer;
+      font-weight: 800;
+    }
+
+    .faq-list p {
+      color: var(--muted);
+      line-height: 1.8;
     }
 
     .contact-section {
@@ -240,13 +366,9 @@
       margin: 0 auto 70px;
       padding: 45px 24px;
       text-align: center;
-      border-radius: 22px;
       border: 1px solid #20528A;
-      background: radial-gradient(
-        ellipse at top,
-        #123C78,
-        #0A1429 70%
-      );
+      border-radius: 22px;
+      background: radial-gradient(ellipse at top, #123C78, #0A1429 70%);
     }
 
     .contact-section p {
@@ -254,41 +376,64 @@
       line-height: 1.8;
     }
 
+    .notice {
+      text-align: center;
+      color: #8297BA;
+      font-size: .8rem;
+    }
+
     footer {
       border-top: 1px solid #172642;
       padding: 25px;
       text-align: center;
-      color: #7588AA;
+      color: #8297BA;
       font-size: .85rem;
     }
 
-    @media (max-width: 700px) {
+    a:focus-visible,
+    button:focus-visible,
+    input:focus-visible,
+    select:focus-visible,
+    textarea:focus-visible,
+    summary:focus-visible {
+      outline: 3px solid var(--cyan);
+      outline-offset: 3px;
+    }
+
+    @media (max-width: 760px) {
       .nav {
+        position: relative;
         flex-direction: column;
         padding: 18px;
       }
 
-      .nav-links {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 14px;
-      }
+      .nav-links { gap: 13px; }
 
-      .hero {
-        padding: 65px 18px;
-      }
+      .hero { padding: 65px 18px; }
 
-      .cards {
+      .cards,
+      .feature-grid,
+      .gallery-grid {
         grid-template-columns: 1fr;
       }
 
-      .section {
-        padding: 55px 18px;
-      }
+      .section { padding: 55px 18px; }
+
+      .quote-form { grid-template-columns: 1fr; }
+
+      .field.full { grid-column: auto; }
 
       .contact-section {
         margin: 0 14px 45px;
         padding: 35px 18px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        scroll-behavior: auto !important;
+        animation-duration: .01ms !important;
+        transition-duration: .01ms !important;
       }
     }
   </style>
@@ -296,13 +441,14 @@
 
 <body>
   <header class="nav">
-    <a class="logo" href="#home">
-      WAHEGURU<span> INSULATION</span>
-    </a>
+    <a class="logo" href="#home">WAHEGURU<span> INSULATION</span></a>
 
     <nav class="nav-links" aria-label="Main navigation">
-      <a href="#features">Services</a>
+      <a href="#services">Services</a>
       <a href="#about">About</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#quote">Get a quote</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
@@ -312,13 +458,11 @@
       <img
         class="brand-logo"
         src="https://raw.githubusercontent.com/ytfiners-commits/Waheguru-Insulation/main/logo.png"
-        alt="Waheguru Insulation Service logo"
+        alt="Waheguru Insulation logo"
         onerror="this.style.display='none'"
       >
 
-      <div class="eyebrow">
-        Comfort · Quality · Reliability
-      </div>
+      <div class="eyebrow">Comfort · Quality · Reliability</div>
 
       <h1>
         INSULATION FOR
@@ -326,29 +470,33 @@
       </h1>
 
       <p>
-        Welcome to Waheguru Insulation. We help homeowners explore
-        insulation services for their properties. Contact us to discuss
-        your project and request a quote.
+        Welcome to Waheguru Insulation. Explore our services, tell us about
+        your project, and contact us to discuss your requirements and request
+        a quote.
       </p>
 
       <div class="actions">
-        <a class="btn btn-primary" href="#contact">
-          ✉ Get in touch
-        </a>
+        <a class="btn btn-primary" href="#quote">✉ Request a quote</a>
+        <a class="btn btn-secondary" href="#services">Explore our services ↓</a>
+      </div>
 
-        <a class="btn btn-secondary" href="#features">
-          Explore our services ↓
+      <div class="actions">
+        <a class="btn btn-secondary" href="mailto:Waheguruinsulationservice@gmail.com">
+          ✉ Email us
+        </a>
+        <a class="btn btn-secondary" href="tel:+61470329052">
+          ☎ +61 470 329 052
         </a>
       </div>
     </section>
 
-    <section class="section" id="features">
+    <section class="section" id="services">
       <div class="section-head">
         <div class="kicker">What we do</div>
         <h2>Our Services</h2>
         <p>
-          Explore our services and contact us to discuss what your
-          home or project needs.
+          Get in touch to discuss your property, your project and the services
+          you need.
         </p>
       </div>
 
@@ -356,28 +504,21 @@
         <article class="card">
           <div class="card-icon">⌂</div>
           <h3>Warping</h3>
-          <p>Professional Warping services for homes.</p>
+          <p>Home warping services. Contact us to discuss your project requirements.</p>
         </article>
 
         <article class="card">
           <div class="card-icon">✦</div>
           <h3>Insulation</h3>
-          <p>
-            Professional insulation services for homes.
-          </p>
+          <p>Professional insulation services for homes. Contact us to discuss your needs.</p>
         </article>
 
         <article class="card">
           <div class="card-icon">▣</div>
-          <h3>Request a quote</h3>
-          <p>
-            Invite customers to contact you with their project
-            details for a quote.
-          </p>
+          <h3>Request a Quote</h3>
+          <p>Tell us about your project so we can discuss your enquiry.</p>
           <div class="actions">
-            <a class="btn btn-primary" href="#contact">
-              Request a quote
-            </a>
+            <a class="btn btn-primary" href="#quote">Start a quote</a>
           </div>
         </article>
       </div>
@@ -388,9 +529,169 @@
         <div class="kicker">About us</div>
         <h2>Waheguru Insulation</h2>
         <p>
-          We welcome enquiries about home insulation projects.
-          Get in touch to discuss your requirements and the next steps.
+          We welcome enquiries about home insulation and related projects.
+          Contact us to discuss what you need and the next steps for your project.
         </p>
+      </div>
+
+      <div class="feature-grid">
+        <article class="info-card">
+          <h3>🏠 Home-focused service</h3>
+          <p>Tell us about your property and the type of work you are considering.</p>
+        </article>
+
+        <article class="info-card">
+          <h3>💬 Clear communication</h3>
+          <p>Share your project details so we can understand your enquiry.</p>
+        </article>
+
+        <article class="info-card">
+          <h3>📩 Easy enquiries</h3>
+          <p>Reach us by phone or email to discuss your project.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="gallery">
+      <div class="section-head">
+        <div class="kicker">A look at the work</div>
+        <h2>Gallery</h2>
+        <p>
+          These are example photos for the website design. Replace them with
+          real photos of your completed projects before presenting them as your work.
+        </p>
+      </div>
+
+      <div class="gallery-grid">
+        <article class="gallery-item">
+          <img
+            src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=80"
+            alt="Example residential interior"
+            loading="lazy"
+          >
+          <div>Home improvement</div>
+        </article>
+
+        <article class="gallery-item">
+          <img
+            src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=900&q=80"
+            alt="Example residential project"
+            loading="lazy"
+          >
+          <div>Residential projects</div>
+        </article>
+
+        <article class="gallery-item">
+          <img
+            src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&w=900&q=80"
+            alt="Example modern home"
+            loading="lazy"
+          >
+          <div>Comfort at home</div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="reviews">
+      <div class="section-head">
+        <div class="kicker">Customer feedback</div>
+        <h2>Reviews</h2>
+        <p>Honest customer feedback helps people make informed decisions.</p>
+      </div>
+
+      <div class="review-panel">
+        <div class="stars" aria-label="Customer reviews">★★★★★</div>
+        <h3>Your feedback matters</h3>
+        <p>
+          Genuine customer reviews can be added here as they are received.
+          We do not publish made-up testimonials.
+        </p>
+        <a
+          class="btn btn-primary"
+          href="mailto:Waheguruinsulationservice@gmail.com?subject=Customer%20feedback"
+        >
+          Share feedback
+        </a>
+      </div>
+    </section>
+
+    <section class="section" id="quote">
+      <div class="section-head">
+        <div class="kicker">Start your enquiry</div>
+        <h2>Request a Quote</h2>
+        <p>
+          Complete the form below. Your email app will open with your enquiry
+          ready for you to review and send.
+        </p>
+      </div>
+
+      <form class="quote-form" id="quote-form">
+        <label class="field">
+          Full name
+          <input name="name" autocomplete="name" required placeholder="Your name">
+        </label>
+
+        <label class="field">
+          Phone number
+          <input name="phone" type="tel" autocomplete="tel" required placeholder="Your phone number">
+        </label>
+
+        <label class="field">
+          Email address
+          <input name="email" type="email" autocomplete="email" required placeholder="you@example.com">
+        </label>
+
+        <label class="field">
+          Suburb / area
+          <input name="suburb" autocomplete="address-level2" placeholder="Your suburb or area">
+        </label>
+
+        <label class="field full">
+          Service needed
+          <select name="service" required>
+            <option value="" disabled selected>Select a service</option>
+            <option>Warping</option>
+            <option>Insulation</option>
+            <option>Other / not sure</option>
+          </select>
+        </label>
+
+        <label class="field full">
+          Project details
+          <textarea name="details" required placeholder="Tell us about your project"></textarea>
+        </label>
+
+        <button class="btn btn-primary" type="submit">
+          ✉ Prepare my quote request
+        </button>
+      </form>
+
+      <p class="notice">
+        This form opens your email app. It does not send or store the enquiry automatically.
+      </p>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="section-head">
+        <div class="kicker">Helpful information</div>
+        <h2>Frequently Asked Questions</h2>
+      </div>
+
+      <div class="faq-list">
+        <details>
+          <summary>How do I request a quote?</summary>
+          <p>Complete the quote form and follow the instructions in your email app.</p>
+        </details>
+
+        <details>
+          <summary>What details should I provide?</summary>
+          <p>Include the service you need, your suburb and a description of your project.</p>
+        </details>
+
+        <details>
+          <summary>Can I contact you directly?</summary>
+          <p>Yes. Call us on +61 470 329 052 or email Waheguruinsulationservice@gmail.com.</p>
+        </details>
       </div>
     </section>
 
@@ -398,22 +699,15 @@
       <div class="kicker">Let's discuss your project</div>
       <h2>Contact Us</h2>
       <p>
-        Have a project in mind? Email or call us to discuss your
-        requirements and request a quote.
+        Have a question? Get in touch with Waheguru Insulation to discuss your project.
       </p>
 
       <div class="actions">
-        <a
-          class="btn btn-primary"
-          href="mailto:Waheguruinsulationservice@gmail.com"
-        >
+        <a class="btn btn-primary" href="mailto:Waheguruinsulationservice@gmail.com">
           ✉ Email us
         </a>
 
-        <a
-          class="btn btn-secondary"
-          href="tel:+61470329052"
-        >
+        <a class="btn btn-secondary" href="tel:+61470329052">
           ☎ +61 470 329 052
         </a>
       </div>
@@ -425,8 +719,30 @@
   </footer>
 
   <script>
-    document.getElementById("year").textContent =
-      new Date().getFullYear();
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    document.getElementById("quote-form").addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      const data = new FormData(event.currentTarget);
+
+      const subject = encodeURIComponent(
+        "Quote request - " + data.get("service")
+      );
+
+      const body = encodeURIComponent(
+        "Name: " + data.get("name") + "\n" +
+        "Phone: " + data.get("phone") + "\n" +
+        "Email: " + data.get("email") + "\n" +
+        "Suburb / area: " + (data.get("suburb") || "Not provided") + "\n" +
+        "Service needed: " + data.get("service") + "\n\n" +
+        "Project details:\n" + data.get("details")
+      );
+
+      window.location.href =
+        "mailto:Waheguruinsulationservice@gmail.com?subject=" +
+        subject + "&body=" + body;
+    });
   </script>
 </body>
 </html>
